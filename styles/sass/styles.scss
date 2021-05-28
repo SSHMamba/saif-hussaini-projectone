@@ -1,0 +1,759 @@
+@import 'setup';
+@import 'variables';
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    
+}
+
+header {
+    height: auto;
+    background-image:url("../assets/header-home.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.header-wrapper {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.header-wrapper h1 {
+    font-size: 8em;
+}
+
+.nav-mobile {
+    display: none;
+}
+
+.wrapper {
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+nav {
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 1.9rem;
+    line-height: 29px;
+    letter-spacing: 1.4px;
+    
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    
+    
+}
+
+nav li {
+    margin: 20px;
+    text-decoration: none;
+    
+    
+    
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+nav li a:hover {
+    color: $myGreen;
+    border-bottom: 3px solid $myGreen;
+}
+
+h1 {
+    font-size:80px;
+    left: 17%;
+    font-family: 'Kumar One Outline', cursive;
+    font-weight: 400;
+    line-height: 100%;
+    position: relative;
+    width: 50%;
+}
+
+h1 a:hover {
+    color: $myGreen;
+    transition: color 1s;
+}
+
+h1 a {
+    text-decoration: none;
+    color: black;
+}
+
+.blue-couch-container {
+    width: 55%;
+    position: relative;
+}
+
+.discovering .wrapper {
+    display: flex;
+    padding: 50px;
+}
+
+.discoveringDescription {
+    width: 80%;
+    padding-right: 100px;
+}
+
+.discovering-description h2 {
+    @include h2-text;
+}
+
+.discovering-description p {
+    @include p-text;
+    margin: 10px 0;
+    margin-right: 25px;
+}
+
+.discovering-description button {
+    background: $myGreen;
+    border: none;
+    text-align: center;
+    
+}
+.discovering-image {
+    width: 100%;
+}
+
+.discovering-image img {
+    box-shadow: $myYellow -20px 20px;
+    position: relative;
+    top: 26px;
+    right: -5px;
+    transition: box-shadow 0.5s ease 0.5s;
+}
+
+.read-more-button {
+    position: relative;
+    top: 15px;
+}
+
+.read-more-button a{
+    text-decoration: none;
+    font-family: 'Kumar One', cursive;
+    border: 5px solid #065635;
+    padding: 5px;
+    color: white;
+    background: $myGreen;
+}
+
+.gallery {
+    background: $myLightGreen;
+}
+
+
+
+ul {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    list-style-type: none;
+    padding: 45px;
+}
+
+.gallery-pic-1,
+.gallery-pic-2,
+.gallery-pic-3 {
+    transition: scale 1s;
+}
+
+.gallery-pic-1:hover,
+.gallery-pic-2:hover,
+.gallery-pic-3:hover {
+    scale: 1.05;
+}
+
+
+
+.info-wrapper {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+.info ul {
+    display: grid;
+    grid-template-columns: 520px 520px;
+    grid-template-rows: 230px 230px;
+    margin: 0 auto;
+}
+
+.info-section h3 {
+    font-family: 'Kumar One', cursive;
+    font-size: 33px;
+    line-height: 58px;
+    letter-spacing: 2.1px;
+
+}
+
+.info-section p {
+    @include p-text;
+    margin-top: -0.3vw;
+
+}
+
+i {
+    font-size: 30px;
+    position: relative;
+    float: left;
+    top: 25px;
+    padding: 5px;
+    right: 10px;
+    background: $myYellow;
+    border: 10px solid $myYellow;
+    border-radius: 50%;
+    transition: box-shadow 0.5s ease 0.5s;
+
+}
+
+.group-wrapper {
+    background: $myLightGreen;
+}
+
+.group-wrapper {
+    max-width: 1600px;
+    margin: 0 auto;
+    width: 78%;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 75px;
+
+    font-size: 1.8rem;
+    line-height: 32px;
+    letter-spacing: 2px;
+
+}
+
+.image-left img {
+    box-shadow: $myYellow 20px 20px;
+    float: right;
+    transition: box-shadow 0.5s ease 0.5s;
+}
+
+.programs-description {
+    padding-top: 80px;
+    margin-left: 0px;
+
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+}
+
+.programs-description h2,
+.locations-description h2 {
+    @include h2-text;
+}
+
+.locations-description {
+    text-align: right;
+    padding-bottom: 50px;
+    position: relative;
+    margin: 0 0 0 auto;
+}
+
+.image-right img {
+    box-shadow: $myYellow -20px 20px;
+    position: relative;
+    bottom: -20px;
+    transition: box-shadow 0.5s ease-in;
+}
+
+.banner {
+    display:flex;
+    justify-content: center;
+}
+
+.search-style {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.8rem;
+    line-height: 32px;
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:100px 60px;
+}
+
+.below-footer {
+    margin: 0 auto;
+    position: relative;
+    background: black;
+    color: white;
+    padding: 2px;
+    text-align: center;
+}
+
+
+
+
+// // // // // // // // // // // // // // // // // 
+// 
+// BLOG PAGE STYLING 
+// 
+// // // // // // // // // // // // // // // // // 
+
+
+
+
+.green-body-background {
+    background: $myLightGreen;
+}
+
+.blog-header-wrapper {
+    width: 100%;
+    max-width: 1680px;
+    margin: 0 auto;
+    height: 700px;
+    background-image:url("../assets/blog-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.blog-header-wrapper h1 {
+    font-size: 10rem;
+}
+
+.blog-header-wrapper h1 a {
+    transition: color 1s;
+}
+
+.blog-header-wrapper h1 a {
+    text-decoration: none;
+    color: black;
+}
+
+.blog-header-wrapper h1 a:hover {
+    color:#065635;
+}
+
+.blog-header-wrapper p {
+font-family: 'Kumar One', cursive;
+font-size: 2.5rem;
+letter-spacing: 4px;
+position: relative;
+left: 25%;
+top: 18%;
+
+}
+
+.nav-mobile {
+    display: none;
+}
+
+.flex-nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.blog-aside-wrapper {
+    position: relative;
+    bottom: 200px;
+    width: 1680px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.blog-wrapper {
+    padding: 45px;
+    padding: 0;
+    box-shadow: $myYellow 15px 15px;
+    margin-right: 45px;
+    background: white;
+    width: 75%;
+
+}
+
+.blog-wrapper h2 {
+    @include h2-text;
+    margin-top: 5%;
+    margin-left: 15%;
+
+}
+
+.blog-wrapper p {
+    @include p-text;
+    width: 75%;
+    margin-left: 15%;
+    padding: 15px;
+}
+
+.post-date {
+    padding: 0;
+}
+
+.blog-wrapper img {
+    box-shadow: $myYellow 5px 15px;
+    margin: 5px;
+}
+
+aside {
+    width: 780px;
+    max-width: 100%;
+    height: 750px;
+    margin-left: 50px;
+    background: $myYellow;
+    margin-top: 250px;
+}
+
+aside img {
+    width: 90%;
+    margin-left:37px;
+
+}
+
+.aside-wrapper h2 {
+    @include h2-text;
+    font-size: 2.3rem;
+}
+
+.aside-wrapper ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: circle;
+    gap: 0px;
+    max-width: 100%;
+    padding: 0px;
+    margin-left: 15px;
+    margin-top: -25px;
+}
+
+.aside-wrapper ul li p {
+    display: inline;
+}
+
+
+.aside-wrapper p {
+    @include p-text;
+    line-height: 28px;
+    font-size: 1.5rem;
+}
+
+.text-wrapper {
+    margin-left: 25px;
+}
+
+.comments {
+    width: 100%;
+    max-width: 1680px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 200px;
+}
+
+.comments h2 {
+    @include h2-text;
+}
+
+.comments-wrapper {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 200px 450px;
+}
+
+.comments-wrapper img {
+    padding: 25px;
+    width: 85%;
+    margin-top: -15px;
+}
+
+.comments-wrapper h2 {
+    @include h2-text;
+
+}
+
+.comments-wrapper h3 {
+    gap: 0px;
+    grid-column-start: 2;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+
+}
+
+.comments-wrapper p {
+    @include p-text;
+    grid-column-start: 2;
+}
+
+.comment-form {
+    max-width: 1680px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    bottom: 200px;
+}
+
+fieldset {
+    border: none;
+}
+
+input[type=text] {
+    height: 60px;
+    text-align: left;
+    font-size: 2rem;
+    border: none;
+    border-bottom: 2px solid $myGreen;
+    letter-spacing: 3.5px;
+    background: $myLightGreen;
+    padding: 15px;
+    margin: 15px;
+    font-weight: 700;
+}
+
+input[type=text]:focus {
+    outline: none;
+    border-bottom: 4px solid $myGreen;
+    
+}
+
+textarea {
+    border: 2px solid $myGreen;
+    background: $myLightGreen;
+    font-size: 2rem;
+    letter-spacing: 3.5px;
+    width: 675px;
+    margin-top: 15px;
+    margin-left: 15px;
+    font-weight: 700;;
+}
+
+textarea:focus {
+    outline: none;
+    border: 4px solid $myGreen;
+}
+
+.comment-style  {
+    padding: 45px
+}
+
+button {
+    margin: 0 auto;
+    text-align: center;
+    background: $myGreen;
+    width: 675px;
+    height: 50px;
+    font-size: 20px;
+    font-family: 'Kumar One', cursive;
+    line-height: 32px;
+    letter-spacing: 2px;
+    margin-left: 25px;
+    border: none;
+    margin-top: 15px;
+}
+
+button a {
+    text-decoration: none;
+        color: white;
+}
+
+button:hover {
+    background: $myYellow;
+    outline: none;
+    color:black;
+}
+
+button a:hover {
+    color: black;
+}
+
+.comment-form .comment-style {
+    width: 710px;
+}
+
+.comment-form button {
+    width: 710px;
+    left:10px;
+}
+
+
+
+// // // // // // // // // // // // // // // // // 
+// 
+// CONTACT PAGE STYLING 
+// 
+// // // // // // // // // // // // // // // // // 
+
+
+
+
+.contact-header-wrapper {
+    width: 100%;
+    max-width: 1680px;
+    margin: 0 auto;
+    height: 700px;
+    background-image:url("../assets/contact-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact-header-wrapper h1 {
+    width: 100%;
+    font-size: 10em;
+}
+
+.contact-header-wrapper h1 a {
+    transition: color 1s;
+}
+
+.contact-header-wrapper h1 a {
+    text-decoration: none;
+    color: black;
+}
+
+.contact-header-wrapper h1 a:hover {
+    color:#065635;
+}
+
+.contact-header-wrapper p {
+    font-family: 'Kumar One', cursive;
+    font-size: 2.5rem;
+    letter-spacing: 4px;
+    position: relative;
+    left: 25%;
+    top: 18%;
+
+}
+
+.nav-mobile {
+    display: none;
+}
+
+
+.contact-body {
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    max-width:1680px;
+}
+
+.contact-wrapper {
+    position: relative;
+    margin: 0 auto;
+}
+
+.form-contact {
+    margin: 0 auto;
+}
+
+
+.contact-form {
+    max-width: 1680px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    bottom: 200px;
+    background: white;
+    padding: 35px;
+    box-shadow: $myYellow 20px 20px;
+    left: 15%;
+
+}
+
+input.contact-name[type=text],
+input.contact-address[type=text] {
+    height: 60px;
+    text-align: left;
+    font-size: 2rem;
+    border: none;
+    border-bottom: 2px solid $myGreen;
+    letter-spacing: 3.5px;
+    background: white;
+    padding: 15px;
+    margin: 15px;
+    font-weight: 700;
+}
+
+input.contact-name[type=text]:focus,
+input.contact-address[type=text]:focus {
+    outline: none;
+    border-bottom: 4px solid $myGreen;
+}
+
+.contact-comment-style {
+    border: 2px solid $myGreen;
+    background: white;
+    font-size: 2rem;
+    letter-spacing: 3.5px;
+    width: 675px;
+    margin-top: 15px;
+    margin-left: 15px;
+    font-weight: 700;
+    padding: 25px;
+}
+
+.footer-info {
+    margin: 0 auto;
+}
+
+.footer-wrapper {
+    position: relative;
+    left: 25%;
+}
+
+.footer-wrapper p {
+    width: 25%;
+    @include p-text;
+}
+
+button {
+    position: relative;
+    left: 3.5%;
+}
+
+.contact-buttons i {
+    font-size: 30px;
+    position: relative;
+    background: $myLightGreen;
+    border: none;
+    color: #065635;
+
+}
+
+.contact-buttons i:hover,
+.contact-buttons i:active {
+    color: black;
+}
+
+.contact-buttons {
+    justify-content: left;
+}
+
+.below-footer-contact {
+    margin: 0 auto;
+    position: relative;
+    background: black;
+    color: white;
+    padding: 2px;
+    text-align: center;
+    bottom: -785px;
+}
