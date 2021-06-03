@@ -427,17 +427,71 @@ ul {
   padding: 45px;
 }
 
-.gallery-pic-1,
-.gallery-pic-2,
-.gallery-pic-3 {
-  -webkit-transition: scale 1s;
-  transition: scale 1s;
+.carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem auto;
+  overflow: hidden;
+  position: relative;
+  width: 400px;
 }
 
-.gallery-pic-1:hover,
-.gallery-pic-2:hover,
-.gallery-pic-3:hover {
-  scale: 1.05;
+.carousel-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.carousel-images img {
+  border-radius: 5px;
+}
+
+.button-previous,
+.button-next {
+  background: #ff0;
+  border: 0;
+  border-radius: 50%;
+  color: black;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 700;
+  height: 3rem;
+  position: absolute;
+  -webkit-transition: opacity 0.25s;
+  transition: opacity 0.25s;
+  width: 3rem;
+  z-index: 1;
+}
+
+.button-previous {
+  left: 5px;
+}
+
+.button-next {
+  left: 365px;
+  right: 5px;
+}
+
+.button-next:hover,
+.button-previous:hover {
+  opacity: 0.75;
+  width: 3.5rem;
+  height: 3.5rem;
+  -webkit-transition: width 0.25s;
+  transition: width 0.25s;
+  -webkit-transition: height 0.25s;
+  transition: height 0.25s;
+  position: absolute;
 }
 
 .info-wrapper {

@@ -75,15 +75,18 @@
 
 
     <!-- second body post: gallery -->
+    <!-- CHANGES MADE FOR ASSIGNMENT 2: JAVASCRIPT UI FUNCTIONALITY -->
+    <!-- Added image carousel -->
 
-        <section class="gallery">
-            <div class=="gallery-wrapper">
-                <ul class="gallery-list">
-                    <li><img class="gallery-pic-1" src="assets/gallery-image-1.jpg" alt="a green drawer housing photo frames and a plant"></li>
-                    <li><img class="gallery-pic-2" src="assets/gallery-image-2.jpg" alt="an orange sofa sitting behind a round wooden table"></li>
-                    <li><img class="gallery-pic-3" src="assets/gallery-image-3.jpg" alt="a decorative twig-style chair"></li>
-                </ul>
-                </div>
+        <section class="carousel">
+            <button class="button-previous" id="previous"><</button>
+            <div class="carousel-images">
+                <img src="assets/gallery-image-1.jpg" alt="">
+                <img src="assets/gallery-image-2.jpg" alt="">
+                <img src="assets/gallery-image-3.jpg" alt="">
+            </div>
+                <button class="button-next" id="next">></button>
+                    
         </section>
 
 
@@ -197,6 +200,7 @@
     </div>
 
 
+    <script src="script.js"></script>
 </body>
 
 </html>
